@@ -1,0 +1,321 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url("../img/blueFabric.png");
+    background-repeat: repeat;
+    width: 100vw;
+}
+h1, h2, h3, h4, h5, h6, ul{
+    font-family: 'Patrick Hand', cursive;
+    list-style-type: none;
+    
+}
+a{
+   text-decoration: none; 
+    color: black;
+}
+p{
+    font-family: 'Signika', sans-serif;
+}
+nav{
+    background: teal;
+    height: 80px;
+    width: 100vw;
+    text-align: center;
+    position:fixed;
+    top:0;
+    
+}
+nav ul{
+    width: 80%;
+    margin: 0 auto;
+/*    display: inline-block;*/
+}
+
+nav ul a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li{  
+    display: inline-block;
+    vertical-align: top;
+    
+    
+}
+li.navLink{
+    font-size: 40px;
+    margin: 15px 3vw 0 3vw;
+    height: 80px;
+}
+li.navLink a{
+    padding: 15px 0 0 0;
+}
+
+.logo{
+    width: 160px;
+}
+.logoMobile {
+    display: none;
+}
+.logoDesktop {
+    display: inline-block;
+}
+
+img.meSide{
+    width: 25%;
+    max-width: 200px;
+    position: fixed;
+    bottom: 49px;
+    right:0px;
+}
+img.meBottom{
+    display: none;
+}
+li.first{
+    margin-left: 0;
+/*    float: left;*/
+}
+li.last{
+/*    float: right;*/
+    margin-right: 0;
+}
+
+
+
+
+
+
+div.headerText{
+    margin: 180px 0 0 0;
+    text-align: center;
+}
+.content h4{
+    font-size: 25px;
+}
+div.contentText{
+    margin: 15px 0 0 0;
+}
+div.contentText div{
+    padding: 0 0 150px 0;
+}
+div.contentText h3{
+    font-size: 35px;
+    margin: 0 auto;
+    width: 80%;
+}
+.content h1{
+    font-size: 60px;
+}
+.content p{
+    margin: 0 0 0 10%;
+    width: 60%;
+    font-size: 20px;
+}
+
+
+
+footer{
+    bottom: 0;
+    position:fixed;
+    width: 100vw;
+    height: 50px;
+    background: teal;
+}
+footer div{
+    width: 80%;
+    margin: 0 auto;
+}
+footer ul{
+    display: inline-block;
+}
+footer ul.contact{
+/*    background: green;*/
+/*    width: 50%;*/
+    height: 50px;
+    padding: 0px 0 0 0;
+    
+}
+footer ul.contact h4{
+    font-size: 18px;
+}
+footer ul.social{
+/*    background: red;*/
+/*    width: 40vw;*/
+/*    right: 0;*/
+/*    text-align: right;*/
+    float:right;
+/*    position:fixed;*/
+    height: 50px;
+    vertical-align: top;
+    padding: 0px 0 0 0;
+}
+footer ul.social li{
+    display: inline;
+}
+footer img{
+    width: 50px;
+}
+
+
+
+
+
+/* MEDIA QUERIES*/
+
+
+
+@media (max-width: 840px) {
+    li.navLink{
+        font-size: 30px;
+        margin: 22.5px 3vw 0 3vw;
+        height: 80px;
+    }
+    li.navLink a{
+        padding: 15px 0 0 0;
+    }
+    .content p{
+        font-size: 17px;
+    }
+}
+@media (max-width: 780px) {
+    nav{
+        height: 40px;
+        text-align: left;
+    }
+    nav ul{
+        width: 100%;
+        margin: 0 auto;
+/*    display: inline-block;*/
+    }
+    .logo{
+        width: 100px;
+    }
+    
+    li.navLink{
+        font-size: 20px;
+        margin: 10px 2vw 0 2vw;
+        height: 80px;
+        text-align: right;
+    }
+    
+    .logoMobile {
+        display: inline-block;
+        margin: -10px 30vw 0 -25px;
+        
+    }
+    
+    .logoDesktop{
+        display: none; 
+    }
+    
+    li.first{
+        margin-left: 0;
+        float: none;
+    }
+    
+    li.last{
+        float: none;
+        margin-right: 0;
+    }
+    .content h4{
+        margin: 80px 0 0 0;
+    }
+    div.contentText h3{
+        
+        font-size: 25px;
+    }
+    .content p{
+        width: 80%;
+        font-size: 18px;
+    }
+/*
+}
+
+@media (max-width: 780px) {
+*/
+    .logoMobile {
+        margin: -10px 15vw 0 -25px;
+        
+    }
+    div.headerText{
+        margin: 40px 0 0 0;
+    }
+    img.meSide{
+        width: 40%;
+        position: fixed;
+        bottom:99px;
+        right:0px;
+        display: none;
+    }
+    img.meBottom{
+        display: inline-block;
+        bottom:0px;
+        position:fixed;
+        text-align: center;
+        margin: 0 0 0 25%;
+    }
+    
+}
+@media (max-width: 675px) {
+    div.contentText{
+        margin-top: 20px;
+    }
+    img.meBottom{
+        bottom:0px;
+    }
+    footer img{
+        width: 40px;
+    }
+    footer ul.social{
+        margin: 5px 0 0 0;
+    }
+    .content h1{
+        font-size: 30px;
+    }
+    .content h3{
+        font-size: 20px;
+    }
+    .content h4{
+        font-size: 20px;
+    }
+    .content p{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 540px) {
+    img.meBottom{
+        width: 200px;
+    }
+    footer ul.contact h4{
+        font-size: 18px;
+    }
+}
+@media (max-width: 430px) {
+    .content h1{
+        font-size: 60px;
+    }
+    li.navLink{
+        font-size: 15px;
+        margin: 12px 2vw 0 2vw;
+    }
+    .logoMobile {
+        margin: -10px 0vw 0 -25px;   
+    }
+    .content p{
+        font-size: 15px;
+    }
+    footer ul.social{
+        display: none; 
+    }
+}
+@media (max-height: 550px), (max-width: 550px){
+    img.meBottom{
+        display: none;
+    }
+    div.contentText div {
+    padding: 0 0 0px 0;
+}
+}

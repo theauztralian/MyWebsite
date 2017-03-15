@@ -1,0 +1,151 @@
+.content{
+    width: 100%;
+    text-align: center;
+}
+.content div.wrap{
+/*    width: 80%;*/
+    
+}
+.heroText{
+    margin: 180px 0 0 0;
+}
+.heroText h1{
+    font-size: 48px;
+    width: 90%;
+    margin: 0 5% 0 5%;
+    padding: 0;
+}
+.heroText h2{
+    margin: 0 auto;
+    width: 70%;
+}
+.leftSide{
+/*    background:red;*/
+    width:30%;
+    height:220vh;
+    margin: 20px 0px 0 -30px;
+    display:inline-block;
+/*    vertical-align: top;*/
+}
+.bar{
+    background:teal;
+    width:30px;
+    margin: 180px 0 0 60px;
+    height:60vh;
+    position:fixed;
+    display:inline-block;
+}
+.rightSide{
+/*    background:yellow;*/
+    width:30%;
+    height:220vh;
+    margin: 0px 0 0 160px;
+/*    margin: 0 0 0 60px;*/
+    display:inline-block;
+    vertical-align: top;
+    
+}
+.leftSide div{
+    height: 500px;
+}
+.leftSide div img{
+    margin: 80px 0 0 0;
+    width: 80%; 
+    border-radius: 5px;
+/*    height: 80%;*/
+}
+.rightSide div {
+/*    background: red;*/
+    height: 500px;
+}
+
+.rightSide div h4{
+    margin: 0 auto;
+    text-align: left;
+    width: 80%;
+    height: 10%;
+    
+}
+.rightSide div p{
+    margin: 0 auto 80px auto;
+    width: 80%; 
+    height: 70%;
+    text-align: left;
+}
+.firstPara{
+    margin: 90px 0 0 0;
+}
+.circle{
+    margin: 14vh auto;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background: maroon;
+}
+.wrapMobile{
+    display:none;
+}
+
+@media (max-width: 850px) {
+    .wrap{
+        display: none;
+    }
+    .wrapMobile{
+        display: inline-block;
+/*        width: 80%;*/
+        
+    }
+    .wrapMobile img{
+        width: 80%;
+        border-radius: 5px;
+    }
+    .wrapMobile div.mobileContent{
+        margin: 20vh 0 40vh 0;
+        text-align: center;
+        
+    }
+    .wrapMobile h4{
+        margin: 0 auto;
+        text-align: left;
+        width: 80%;
+    }
+    .wrapMobile div p{
+        margin: 0 auto;
+        text-align: left;
+    }
+    div.mobileLast{
+        margin: 0 0 30px 0;
+    }
+    
+    
+}
+
+@media (max-width: 780px){
+    .heroText{
+        margin: 100px 0 0 0;
+    }
+}
+@media (max-width: 680px){
+    .wrapMobile div.mobileContent{
+        margin: 10vh 0 20vh 0;
+    }
+    .heroText{
+        margin: 80px 0 0 0;
+    }
+    .heroText h1{
+        
+        font-size: 35px;
+    }
+    .heroText h2{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px){
+    .heroText h1{
+        font-size: 25px;
+    }
+    .heroText h2{
+        font-size: 18px;
+    }
+}
