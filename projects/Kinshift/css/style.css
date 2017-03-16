@@ -1,0 +1,367 @@
+/**
+ * @file
+ * Minerva formatting
+ */
+/*test change!*/
+@font-face { font-family: BebasNeue; font-weight: normal; src: url('../fonts/BebasNeueRegular.otf'); } 
+@font-face { font-family: BebasNeue; font-weight: bold; src: url('../fonts/BebasNeueBold.otf');}
+@font-face { font-family: Montserrat; font-weight: normal; src: url('../fonts/MontserratRegular.otf'); } 
+@font-face { font-family: Montserrat; font-weight: bold; src: url('../fonts/MontserratBold.otf');}
+@font-face { font-family: Montserrat; font-weight: light; src: url('../fonts/MontserratLight.otf');}
+@font-face { font-family: Montserrat; font-weight: lighter; src: url('../fonts/MontserratUltraLight.otf');}
+body {
+    background-color: #65818C;
+    font-family: Montserrat;
+    font-weight: lighter;
+    color: #FFF;
+}
+h1, h2.pane-title{
+    font-size: 4em;
+    color: white;
+    text-align: center;
+    margin: 0.4em auto;
+    font-family: BebasNeue;
+    font-weight: bold;
+}
+h2 {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-family: BebasNeue;
+    font-weight: bold;
+}
+h3 {
+    margin: 5px 0px;
+    color: #65818C;
+    font-family: Montserrat;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+p {
+    font-family: Montserrat;
+    font-weight: lighter;
+    color: white;
+}
+input {
+    max-width: calc(100% - 10px);
+    font-family: Montserrat;
+}
+input[type="text"], input[type="password"], textarea {
+    border-radius: 3px;
+    padding: 5px;
+    background: #e6e6e6;
+    border: none;
+}
+input[type="submit"], a.error-link {
+    text-decoration: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border: none;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 2px;
+    background: #e64c3c;
+    color: white;
+    cursor: pointer;
+}
+a:visited {
+    color:#D00;
+}
+a:link {
+    color:#EEE;
+}
+a:hover {
+    color:#CCC;
+}
+a:active {
+    color:#CCC;
+}
+a.error-link {
+    display: inline-block;
+    color: #FFF;
+}
+div.tabs a:visited, div.tabs a:link, div.messages a:visited, div.messages a:link {
+    color: #000;
+}
+div.vertical-tabs a {
+    color: #000;
+}
+body.maintenance-page div#header {
+    padding: 0.7em;
+    background-color: #555050;
+    background-color: rgba(255,255,255,0.7);
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+body.maintenance-page div#content-content {
+    border-radius: 3px;	
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    width: 50%;
+    margin: 0 auto 2% auto;
+    padding: 2.5%;
+    text-align:left;
+    background-color: #555050;
+}
+nav {
+    background-color: #000;
+    background-color: rgba(0,0,0,.7);
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    font-family: BebasNeue;
+    line-height: 1em;
+}
+nav ul#main-menu li {
+    font-size: 40px;
+    line-height: 1em;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+nav ul#main-menu li a {
+    color: #fff;
+    text-decoration: none;    
+    display: block;
+    padding: 12px 20px;
+}
+nav ul#main-menu li a.active{
+    color: #fff;
+    text-decoration: none;
+}
+nav ul#main-menu li a.link, nav ul#main-menu li a.visited, nav ul#main-menu li a.active{
+    text-decoration: none;
+    font-family: BebasNeue;
+}
+nav ul#main-menu li a:hover, nav ul#main-menu li a:active {
+    text-decoration: none;
+    background-color: rgba(235,73,65,0.75);
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+nav div.responsive-menus.responsified ul.responsive-menus-simple {
+    border-top-left-radius: 4px;
+}
+footer div#top_footer {
+    background-color: #65818C;
+}
+footer div#bottom_footer {
+    color: #65818C;
+    background-color: #3F616F;
+}
+p {
+	font-family: Montserrat;
+	font-weight: lighter;
+	color: white;
+}
+div.panels-flexible-row:nth-child(odd) {
+	text-align: center;
+	display: block;
+	padding:1px 0;
+	width: 100%;
+}
+div.panels-flexible-row:nth-child(even) {
+	text-align: center;
+	display: block;
+    background: #4D4545;
+	padding: 1px 0;
+	width: 100%;
+}
+div.panel-panel {
+	width: 100%;
+	height: 400px;
+	background: #65818C;
+	margin: 0;
+	padding: 1px 0;	
+}
+div.panels-flexible-row div.pane-content {
+    border-radius: 3px;	
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	width: 75%;
+	margin: 0 auto 5% auto;
+	padding: 2%;
+	text-align: center;
+}
+div.panels-flexible-row:not(:first-child) :first-child.pane-content{
+    margin-top: 5%;
+}
+div.panels-flexible-row:nth-child(odd) div.pane-content{
+	background: #555050;
+}
+div.panels-flexible-row:nth-child(even) div.pane-content{
+	background: #65818C;
+}
+div.panels-flexible-row div.views div.pane-content {
+    border-radius: 0;
+    box-shadow: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    background: none;
+}
+div.panels-flexible-row div.views div.pane-content div.views-row {
+    display: block;
+    background: #555050;
+    width: 75%;
+    list-style-type: none;
+    margin: 5% auto 5% auto;
+    /*padding: 40px 100px; This padding is requried to make the boxes the same width as those in div.panels-flexible-row div.pane-content */
+    padding: 2%;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 3px;
+}
+div.panels-flexible-row div.views div.pane-content div.views-row h3 {
+    margin-top: 0;
+    padding: 0;
+    line-height: 1em;
+}
+body.page-node-6 div.panels-flexible-row div.views h1 + div.pane-content div.views-row {
+    margin-top: 0;
+}
+div.panels-flexible-row div.views div.pane-content div.views-row:nth-child(odd) img {
+    float: left;
+    margin: 0 20px 0 0;
+    border-radius: 3px;
+    max-width: 100%;
+}
+div.panels-flexible-row div.views div.pane-content div.views-row:nth-child(even) img {
+    float: right;
+    margin: 0 0 0 10px;
+    border-radius: 3px;
+    max-width: 100%;
+}
+body.page-node-19 div.panels-flexible-row div.views div.pane-content div.views-row img:last-of-type {
+    display: none;
+}
+body.page-node-19 div.panels-flexible-row div.views div.pane-content div.views-row img:first-of-type {
+    display: block;
+}
+body.page-node-19 div.panels-flexible-row div.views div.pane-content div.views-row div{
+    width: 100%;
+}
+body.page-node-19 div.panels-flexible-row div.views div.pane-content div.views-row div p img{
+    float: none;
+    margin: 0 auto;
+}
+img#app_store{
+    text-align: center;
+    margin: 0 auto;
+    width: 150px;
+    height: auto;
+}
+div.slide-title{
+    font-family: BebasNeue;
+    font-weight: Bold;
+    text-align: center;
+    color: #FFF;
+    font-size: 60px;
+    line-height: 1em;
+}
+div.slide-title div.hero-title-content{
+    margin: 0 auto;
+    padding: 1%;
+    display: inline-block;
+    background-color: rgba(101,129,140,0.75);
+    border-radius: 3px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+h1.slide-title{
+    text-decoration: none;
+}
+header.hero h1{
+    font-size: 4em;
+}
+header.hero a{
+    text-decoration: none;
+}
+header.hero {
+    text-shadow: 5px 5px 8px #000000, 0px 0px 8px #000000;
+}
+tbody{
+    color: #000;
+}
+tbody a:link{
+    color: #000;
+}
+/*  Footer Stuff   */
+footer a {
+    text-decoration: none;
+}
+footer div#top_footer div.region-top-footer div.block div:first-child  {
+    margin: 25px;
+}
+footer div#top_footer div.region-top-footer div.block div:nth-child(2) {
+    margin: 25px;
+}
+footer div#top_footer div.region-top-footer div:first-child div.content img {
+    height: 45px;
+    border: none;
+}
+footer div#top_footer div.region-top-footer div:nth-child(2) div.content img {
+    height: 50px;
+    border: none;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 7px;
+    margin-right: 10px;
+}
+footer div#bottom_footer div.region-bottom-footer div.content {
+    color: #65818C;
+    font-family: montserrat;
+}
+footer div#bottom_footer div.region-bottom-footer div.content p {
+    color: #65818C;
+    margin: 1em;
+}
+footer div#bottom_footer div.region-bottom-footer div.content li {
+    padding: 1em .5em;
+}
+footer div#bottom_footer div.region-bottom-footer div.content li a.active,
+footer div#bottom_footer div.region-bottom-footer div.content li a:link,
+footer div#bottom_footer div.region-bottom-footer div.content li a:visited{
+    color: #65818C;
+}
+footer div#bottom_footer div.region-bottom-footer div.content li a:hover,
+footer div#bottom_footer div.region-bottom-footer div.content li a:active {
+    color: #FFF;
+}
+body:not(.node-type-panel):not(.page-contact) div.region-content {
+    border-radius: 3px;	
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    width: 90%;
+    margin: 0 auto 2% auto;
+    padding: 20px;
+    text-align:left;
+    background-color: #555050;
+}
+aside div.content {
+    border-radius: 3px;	
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    width: 75%;
+    margin: 0 auto 10% auto;
+    padding: 5%;
+    text-align:left;
+    background-color: #555050;
+}
+aside {
+    margin-top: 1px;
+}
+body.page-contact div.pane-content {
+    padding: 2% 5px;
+}
+.contact-form {
+    margin: 0 2%;
+}
+.contact-form div:first-child{
+    margin-top: 0;
+}
+.contact-form div:last-child{
+    margin-bottom: 0;
+}
+body.page-contact div.pane-content form.contact-form {
+    text-align: left;
+}
+div.messages, div.messages p {
+    color: #000;
+}

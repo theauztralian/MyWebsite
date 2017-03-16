@@ -1,0 +1,37 @@
+name            = Minerva
+description     = The Almighty Software Company responsive theme.
+screenshot      = screenshot.png
+
+version         = "7.x-1.0"
+core            = "7.x"
+engine          = phptemplate
+
+screenshot      = screenshot.png
+
+; STYLE SHEETS
+stylesheets[all][] = css/layout.css
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/responsive.css
+
+; SCRIPTS
+scripts[] = js/rollover.js
+; scripts[] = js/Refresh.js
+
+; REGIONS
+regions[hero]           = Hero
+regions[highlighted]    = Highlighted
+regions[help]           = Help
+regions[content]        = Content
+regions[sidebar_first]  = First sidebar
+regions[sidebar_second] = Second sidebar
+regions[top_footer]     = Top Footer
+regions[bottom_footer]  = Bottom Footer
+regions[bottom]         = Page bottom
+
+regions[page_top]       = Page top
+regions[page_bottom]    = Page bottom
+
+; FEATURES
+features[] = logo
+features[] = favicon
+features[] = main_menu

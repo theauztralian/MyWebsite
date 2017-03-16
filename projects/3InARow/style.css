@@ -1,0 +1,11 @@
+
+table{
+    background: orange;
+}
+tr{
+    background: grey;
+}
+td{
+    width: 70px;
+    height: 70px;
+}

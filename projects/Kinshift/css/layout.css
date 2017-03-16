@@ -1,0 +1,280 @@
+
+/**
+ * @file
+ * Minerva layout
+ *
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin:0;
+    padding:0;
+}
+
+body.admin-menu{
+    margin-top: 30px !important;
+}
+
+body.admin-menu:not(.adm_menu_hidden) {
+    margin-top: 0 !important;
+}
+
+body{
+    margin:0;
+    padding:0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* Logo/Navigation Bar */
+
+nav {
+    margin: 0;
+    padding: 12px;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    z-index: 100;
+    display: inline-block;
+}
+
+nav div#branding {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: text-top;
+    height: 100%;
+    width: auto;
+}
+
+nav div#branding img {
+    margin-top: 2px;
+    height: 100%;
+}
+
+nav div.responsive-menus {
+    float: right;
+}
+nav ul#main-menu {
+    margin: -12px 10px -12px 0;
+    padding: 0;
+    display: inline-block;
+    float:right;
+    font-size: 0;
+}
+div.content {
+    width: 100%;
+}
+/* Hero Image */
+header{
+}
+body.page-node-4 header.hero {
+    overflow: hidden;
+    height: 50vh;
+}
+header.hero div:first-child div.content, header.hero div.content {
+    position: relative;
+    width:100%;
+    /* Consider height percentage here...*/
+    min-height: 64px;
+    max-height: 243px;
+    overflow: hidden;
+}
+
+/* Override hero max-size if homepage */
+body.front header.hero div:first-child div.content {
+    max-height: 643px;
+}
+
+div.messages {
+    margin: 1.5%;
+}
+
+header.hero img {
+    width: 100%;
+    height: auto;
+}
+
+/* Hero Slide */
+ header div.hero-slide {
+    display: block;
+    position: relative;
+    height: 50vh;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+/*    min-height: 243px;*/
+    /*CAUSES CONFLICTS WITH MOBILE VERSION CONSIDER REVISION OR ONLY USE MAX HEIGHT IN RESPONSIVE.CSS*/
+    overflow: hidden;
+}
+/*
+header.hero div.slide-title {
+    position: absolute;
+    height: 50vh;
+    top: calc(50% - 1em);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+*/
+div.hero-slide h1.slide-title{
+    position: relative;
+    margin: 0 auto;
+    margin-top: calc((50vh - 1em)/2 + 32px);
+    text-decoration: none;
+}
+
+/* Content Area */
+/* Content Container */
+div#container{
+    min-height: 100%;
+    position: relative;
+}
+div#content-container {
+    clear: both;
+    display: block;
+    position: relative;
+    padding-bottom: 155px;  /*Height of the footer*/
+    overflow: auto;
+    
+}
+
+div#content {
+    clear: both;
+}
+
+/* If only one sidebar exists */
+article {
+    float: left;
+    width: 100%;
+}
+p {
+    margin-bottom: 20px;
+}
+p:last-child {
+    margin:0;
+}
+/* If two sidebars exists */
+body.two-sidebars article {
+    float: left;
+    width: 48.4%;
+    margin-left: 25.8%;
+    margin-right: -74.2%;
+}
+body.two-sidebars aside#sidebar-first{
+    float: left;
+    width: 22.6%;
+    margin-left: 0;
+    margin-right: -22.6%;
+
+}
+body.two-sidebars aside#sidebar-second{
+    float: left;
+    width: 22.6%;
+    margin-left: 77.4%;
+    margin-right: -100%;
+}
+
+/* If only first sidebar exists */
+body.sidebar-first article {
+    float: left;
+    width: 74.2%;
+    margin-left: 25.8%;
+    margin-right: -100%;
+}
+
+body.sidebar-first aside#sidebar-first{
+    float: left;
+    width: 22.6%;
+    margin-left: 0;
+    margin-right: -25.8%;
+}
+
+/* If only second sidebar exists */
+body.sidebar-second article {
+    float: left;
+    width: 74.2%;
+    margin-left: 0;
+    margin-right: -77.4%;
+}
+
+body.sidebar-second aside#sidebar-second{
+    float: left;
+    width: 22.6%;
+    margin-left: 77.4%;
+    margin-right: -100%;
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    height: 155px; /* Height of the footer */
+}
+
+/* Top Footer */
+footer div#top_footer {
+    overflow: hidden;
+    width: 100%;
+}
+
+footer div#top_footer div.region-top-footer div:first-child {
+    float: left;
+    width: auto;
+}
+
+footer div#top_footer div.region-top-footer div:nth-child(2) {
+    /* Begrudgingly using a float. */
+    float: right;
+    width: auto;
+}
+
+footer ul.social_media {
+    margin: 0;
+    padding: 0;
+}
+
+footer ul.social_media li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+/* Bottom Footer */
+footer div#bottom_footer {
+    clear: both;
+    overflow: auto;
+    width: 100%;
+}
+
+footer div#bottom_footer div.region-bottom-footer div:first-child {
+    display: inline-block;
+    float: left;
+    width: auto;
+}
+
+footer div#bottom_footer div.region-bottom-footer div:first-child div.content ul{
+    display: inline-block;
+}
+
+footer div#bottom_footer div.region-bottom-footer div:first-child div.content ul li{
+    display: inline-block;
+}
+
+footer div#bottom_footer div.region-bottom-footer div:nth-child(2) {
+    display: inline-block;
+    /* Begrudgingly using a float. */
+    float: right;
+    width: auto;
+}
